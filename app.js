@@ -1,3 +1,5 @@
+let numeroSecreto = gerarNumeroAleatorio();
+
 function exibirTextoNaTela(tag, texto) {
   let campo = document.querySelector(tag);
   campo.innerHTML = texto;
@@ -6,6 +8,20 @@ function exibirTextoNaTela(tag, texto) {
 exibirTextoNaTela("h1", "Jogo do número secreto");
 exibirTextoNaTela("p", "Tente adivinhar o número secreto entre 1 e 10");
 
-function verifcarChute() {
-  console.log("Chute enviado!");
+function verificarChute() {
+  let chute = document.querySelector("input").value;
+
+  if (chute == numeroSecreto) {
+    exibirTextoNaTela("p", "Parabéns! Você acertou o número secreto!");
+  } else {
+    if (chute > numeroSecreto) {
+      exibirTextoNaTela("p", "O número secreto é menor!");
+    } else {
+      exibirTextoNaTela("p", "O número secreto é maior!");
+    }
+  }
+}
+
+function gerarNumeroAleatorio() {
+  return parseInt(Math.random() * 10) + 1;
 }

@@ -17,6 +17,10 @@ Saiba mais em: [ResponsiveVoice - Text To Speech](https://responsivevoice.org/).
 ### Preview do Jogo
 ![screenshot](screenshot/screen-numero-secreto.png)
 
+### Deploy
+A página está disponível para ser acessada em:
+https://jogo-lime-six.vercel.app/
+
 ___
 **Agradecimentos e créditos:**   
 Este projeto foi desenvolvido no programa [ONE - Oracle Next Education](https://www.oracle.com/br/education/oracle-next-education/), iniciativa da Oracle em parceria com a [Alura](https://www.alura.com.br/).   
